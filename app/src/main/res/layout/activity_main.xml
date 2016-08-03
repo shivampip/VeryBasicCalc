@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="calc.shivam.com.verybasiccalc.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sscreen"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/screen_m"
+            android:layout_marginRight="@dimen/screen_m"
+            android:layout_marginTop="@dimen/screen_m"
+            android:background="@color/screen"
+            android:textSize="@dimen/sscreen_f"
+            android:padding="@dimen/screen_p"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/screen"
+            android:layout_marginLeft="@dimen/screen_m"
+            android:layout_marginRight="@dimen/screen_m"
+            android:layout_marginBottom="@dimen/screen_m"
+            android:gravity="right"
+            android:background="@color/screen"
+            android:textSize="@dimen/screen_f"
+            android:padding="@dimen/screen_p"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/screen_m"
+            android:layout_marginRight="@dimen/screen_m"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="7"
+                android:onClick="seven"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="8"
+                android:onClick="eight"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="9"
+                android:onClick="nine"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="-"
+                android:onClick="sub"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/screen_m"
+            android:layout_marginRight="@dimen/screen_m"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="4"
+                android:onClick="four"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="5"
+                android:onClick="five"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="6"
+                android:onClick="six"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="*"
+                android:onClick="mul"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/screen_m"
+            android:layout_marginRight="@dimen/screen_m"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="1"
+                android:onClick="one"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="2"
+                android:onClick="two"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="3"
+                android:onClick="three"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="/"
+                android:onClick="div"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/screen_m"
+            android:layout_marginRight="@dimen/screen_m"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="C"
+                android:onClick="clear"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="0"
+                android:onClick="zero"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="="
+                android:onClick="equ"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+            <Button
+                android:layout_width="@dimen/b_width"
+                android:layout_height="@dimen/b_height"
+                android:text="+"
+                android:onClick="add"
+                android:textSize="@dimen/b_f"
+                android:padding="@dimen/b_p"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nCreated by- Shivam Agrawal"
+            android:textColor="@color/screen"
+            android:gravity="right"
+            />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
